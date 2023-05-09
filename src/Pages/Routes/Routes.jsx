@@ -9,6 +9,8 @@ import Welcome from "../Dashboard/Welcome";
 import Room from "../Dashboard/Room";
 import Guest from "../Dashboard/Guest";
 import Booking from "../Dashboard/Booking";
+import Details from "../Details/Details";
+import CheckOut from "../CheckOut/CheckOut";
 
 
 const routes = createBrowserRouter([
@@ -28,6 +30,14 @@ const routes = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/service-details',
+        element:<Details></Details>
+      },
+      {
+        path: '/checkout',
+        element:<CheckOut></CheckOut>
       },
 
     ]

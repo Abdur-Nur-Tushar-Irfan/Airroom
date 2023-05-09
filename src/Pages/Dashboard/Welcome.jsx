@@ -14,7 +14,7 @@ const Welcome = () => {
         <p className='text-6xl font-bold'>To</p>
       </div>
       <div className='flex justify-center text-gray-500 items-center mt-4'>
-        <p className='text-3xl font-medium'>User Dashboard</p>
+        <p className='text-3xl font-medium'>Dashboard</p>
       </div>
     </div>
   )

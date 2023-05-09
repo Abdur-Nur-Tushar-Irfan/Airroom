@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import { Link, useNavigate } from 'react-router-dom';
 import PrimaryButton from '../../PrimaryButton/PrimaryButton';
 import { useContext, useState } from 'react';
@@ -9,15 +8,15 @@ import { toast } from 'react-hot-toast';
 
 const Header = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-    const navigate=useNavigate()
-    const { user,logOut } = useContext(AuthContext)
-    const handleSignOut=()=>{
+    const navigate = useNavigate()
+    const { user, logOut } = useContext(AuthContext)
+    const handleSignOut = () => {
         logOut()
-        .then(result=>{
-            toast.success('you have logged out')
-            navigate('/login')
-        })
-        .catch(error=>console.log(error))
+            .then(result => {
+                toast.success('you have logged out')
+                navigate('/login')
+            })
+            .catch(error => console.log(error))
 
     }
 
