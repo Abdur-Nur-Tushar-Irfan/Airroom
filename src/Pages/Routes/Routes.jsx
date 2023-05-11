@@ -11,6 +11,7 @@ import Guest from "../Dashboard/Guest";
 import Booking from "../Dashboard/Booking";
 import Details from "../Details/Details";
 import CheckOut from "../CheckOut/CheckOut";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
 const routes = createBrowserRouter([
@@ -33,7 +34,7 @@ const routes = createBrowserRouter([
       },
       {
         path: '/service-details',
-        element:<Details></Details>
+        element:<PrivateRoute><Details></Details></PrivateRoute>
       },
       {
         path: '/checkout',

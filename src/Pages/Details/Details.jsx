@@ -56,15 +56,6 @@ import PrimaryButton from '../../PrimaryButton/PrimaryButton'
                 </h3>
               </div>
               <div>
-                <div className='flex flex-col items-center justify-center'>
-                  <img
-                    alt=''
-                    referrerPolicy='no-referrer'
-                    className='w-16 h-16 border rounded-full'
-                    src='https://i.ibb.co/6JM5VJF/photo-1633332755192-727a05c4013d.jpg'
-                  />
-                  <p>John Doe</p>
-                </div>
               </div>
             </div>
             <hr />

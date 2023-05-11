@@ -29,7 +29,7 @@ const Home = () => {
       <div className='flex-1'>
         <div>
           <div className='flex justify-between px-4 mt-10'>
-            <p className='text-xl font-bold'>Dormotory-1 Room</p>
+            <p className='text-xl font-bold'>Guest-House#1</p>
             <Link to='/coming-soon'>
               <p>See All</p>
             </Link>
@@ -47,8 +47,8 @@ const Home = () => {
         ) : (
           <div>
             <div className='flex justify-between px-4'>
-              <p className='text-xl font-bold'>Dormotory-2 Room</p>
-              <Link to='/coming-soon'>
+              <p className='text-xl font-bold'>Guest-House#2</p>
+              <Link to=''>
                 <p>See All</p>
               </Link>
             </div>
