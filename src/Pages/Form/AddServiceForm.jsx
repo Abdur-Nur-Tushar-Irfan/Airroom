@@ -1,20 +1,29 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { CalendarIcon } from '@heroicons/react/20/solid'
-import React from 'react'
+import React, { useState } from 'react'
 import DatePicker from 'react-datepicker'
 
-const AddServiceForm = ({
-    handleSubmit,
-    arrivalDate,
-    setArrivalDate,
-    departureDate,
-    setDepartureDate,
-    loading,
-    handleImageChange,
-    preview,
-    uploadButtonText,
-}) => {
+const AddServiceForm = () => {
+    const [arrivalDate,setArrivalDate]=useState(new Date())
+    const handleSubmit=(event)=>{
+        event.preventDefault()
+        const form = event.target;
+        const date = form.date.value;
+        const duration = form.duration.value;
+        const cost = form.cost.value;
+        const roomtype = form.roomtype.value;
+        const room_plan=form.room_plan.value;
+        const roomno=form.room_no.value;
+        const guest=form.guest.value;
+        const name=form.name.value;
+        const email=form.email.value;
+        const Phone=form.Phone.value;
+        const address=form.address.value;
+        const description=form.description.value;
+        console.log(date,duration,cost,roomtype,room_plan,roomno,guest,name,email,Phone,address,description)
+        
+    }
     return (
         <>
             <div className='flex justify-center'>
@@ -29,6 +38,7 @@ const AddServiceForm = ({
                                 <div className='shadow-md rounded-md my-2 p-3 flex justify-between items-center'>
                                     <div>
                                         <DatePicker
+                                            name='date'
                                             selected={arrivalDate}
                                             onChange={date => setArrivalDate(date)}
                                             className='w-2/3'
@@ -45,7 +55,7 @@ const AddServiceForm = ({
                                 </label>
                                 <input
                                     className='w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50'
-                                    name='total_guest'
+                                    name='duration'
                                     id='duration'
                                     type='number'
                                     placeholder='Duration'
@@ -62,9 +72,21 @@ const AddServiceForm = ({
                                             className='w-2/3'
                                         />
                                     </div>
-
                                     <CalendarIcon className='h5 w-5' />
                                 </div>
+                            </div>
+                            <div className='space-y-1 text-sm'>
+                                <label htmlFor='guest' className='block text-gray-600'>
+                                    Total Cost
+                                </label>
+                                <input
+                                    className='w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50'
+                                    name='cost'
+                                    id='duration'
+                                    type='number'
+                                    placeholder='Total Cost'
+                                    required
+                                />
                             </div>
                         </div>
                         <p className='text-lg font-bold'>Room Details</p>
@@ -76,7 +98,7 @@ const AddServiceForm = ({
                                 </label>
                                 <input
                                     className='w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50'
-                                    name='price'
+                                    name='roomtype'
                                     id='price'
                                     placeholder='Room type'
                                     required
@@ -89,9 +111,8 @@ const AddServiceForm = ({
                                 </label>
                                 <input
                                     className='w-full px-4 py-3 text-gray-800 border border-green-300 focus:outline-green-500 rounded-md bg-green-50'
-                                    name='total_plan'
+                                    name='room_plan'
                                     id='guest'
-                                    type='number'
                                     placeholder='Room Plan'
                                     required
                                 />

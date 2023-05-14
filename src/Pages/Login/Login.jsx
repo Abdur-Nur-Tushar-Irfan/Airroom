@@ -17,7 +17,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 setLoginError('')
-                navigate('/')
+                navigate('/dashboard')
                 console.log(user)
             })
             .catch(error=>{
