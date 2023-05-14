@@ -9,6 +9,7 @@ import {
     BeakerIcon,
     UserIcon,
   } from '@heroicons/react/24/solid'
+  import DatePicker from "react-datepicker";
   import React from 'react'
   import { Link } from 'react-router-dom'
 import PrimaryButton from '../../PrimaryButton/PrimaryButton'
@@ -107,7 +108,7 @@ import PrimaryButton from '../../PrimaryButton/PrimaryButton'
               </div>
             </div>
             <hr />
-            <div className='mt-4 text-gray-500'>
+            {/* <div className='mt-4 text-gray-500'>
               <p>
                 It's newly constructed 7 storied building maintaining building
                 code by a locally famous architect. Enough lights and natural air
@@ -127,20 +128,20 @@ import PrimaryButton from '../../PrimaryButton/PrimaryButton'
                 Bangladesh is a beauty with its six seasons and green. The people
                 are hospitable and worm.
               </p>
-            </div>
+            </div> */}
             <br />
-            <div className='flex gap-3 items-center text-xl text-blue-600'>
+            {/* <div className='flex gap-3 items-center text-xl text-blue-600'>
               <p>Read more about the space</p>
               <ChevronDownIcon className='h-5 w-5' />
-            </div>
+            </div> */}
             <br />
-            <div>
+            {/* <div>
               <p className='text-xl text-gray-900'>Reviews</p>
               <div className='flex gap-1 mb-2'>
                 <StarIcon className='h4 w-4 text-green-500' />{' '}
                 <span>4.8 (10 reviews)</span>
               </div>
-            </div>
+            </div> */}
           </div>
   
           {/* Cart */}

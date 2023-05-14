@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import DatePicker from "react-datepicker";
 
 const SearchForm = () => {
-  const [location, setLocation] = useState('Dhaka')
+  const [location, setLocation] = useState('')
   const [arrivalDate, setArrivalDate] = useState(new Date())
 
   const [departureDate, setDepartureDate] = useState(
