@@ -12,6 +12,7 @@ import Booking from "../Dashboard/Booking";
 import Details from "../Details/Details";
 import CheckOut from "../CheckOut/CheckOut";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Message from "../Dashboard/Message";
 
 
 const routes = createBrowserRouter([
@@ -63,6 +64,10 @@ const routes = createBrowserRouter([
       {
         path:'/dashboard/booking',
         element:<Booking></Booking>
+      },
+      {
+        path:'/dashboard/message',
+        element:<Message></Message>
       },
       
 

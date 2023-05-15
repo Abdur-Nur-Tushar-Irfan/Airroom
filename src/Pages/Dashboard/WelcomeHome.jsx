@@ -6,7 +6,7 @@ const WelcomeHome = () => {
   const { user } = useContext(AuthContext)
 
   return (
-    <div className='h-screen text-gray-700 flex flex-col justify-center items-center pb-16'>
+    <div className='mt-32 text-gray-700 flex flex-col justify-center items-center pb-16'>
       <div className='flex justify-center items-center'>
         <p className='text-6xl font-bold'>Welc</p>
         <div className='w-9 h-9 border-8 border-dashed rounded-full animate-spin mt-3 border-green-400'></div>

@@ -10,7 +10,7 @@ const SearchForm = () => {
   const [arrivalDate, setArrivalDate] = useState(new Date())
 
   const [departureDate, setDepartureDate] = useState(
-    new Date(arrivalDate.getTime() + 24 * 60 * 60 * 1000)
+    new Date(arrivalDate?.getTime() + 24 * 60 * 60 * 1000)
   )
 
   const navigate = useNavigate()

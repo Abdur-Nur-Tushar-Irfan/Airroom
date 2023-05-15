@@ -5,24 +5,27 @@ import React, { useState } from 'react'
 import DatePicker from 'react-datepicker'
 
 const AddServiceForm = () => {
-    const [arrivalDate,setArrivalDate]=useState(new Date())
-    const handleSubmit=(event)=>{
+    const [arrivalDate, setArrivalDate] = useState(new Date())
+    const [departureDate, setDepartureDate] = useState(
+        new Date(arrivalDate.getTime() + 24 * 60 * 60 * 1000)
+    )
+    const handleSubmit = (event) => {
         event.preventDefault()
         const form = event.target;
         const date = form.date.value;
         const duration = form.duration.value;
         const cost = form.cost.value;
         const roomtype = form.roomtype.value;
-        const room_plan=form.room_plan.value;
-        const roomno=form.room_no.value;
-        const guest=form.guest.value;
-        const name=form.name.value;
-        const email=form.email.value;
-        const Phone=form.Phone.value;
-        const address=form.address.value;
-        const description=form.description.value;
-        console.log(date,duration,cost,roomtype,room_plan,roomno,guest,name,email,Phone,address,description)
-        
+        const room_plan = form.room_plan.value;
+        const roomno = form.room_no.value;
+        const guest = form.guest.value;
+        const name = form.name.value;
+        const email = form.email.value;
+        const Phone = form.Phone.value;
+        const address = form.address.value;
+        const description = form.description.value;
+        console.log(date, duration, cost, roomtype, room_plan, roomno, guest, name, email, Phone, address, description)
+
     }
     return (
         <>
@@ -38,7 +41,6 @@ const AddServiceForm = () => {
                                 <div className='shadow-md rounded-md my-2 p-3 flex justify-between items-center'>
                                     <div>
                                         <DatePicker
-                                            name='date'
                                             selected={arrivalDate}
                                             onChange={date => setArrivalDate(date)}
                                             className='w-2/3'
@@ -67,8 +69,8 @@ const AddServiceForm = () => {
                                 <div className='shadow-md rounded-md my-2 p-3 flex justify-between items-center'>
                                     <div>
                                         <DatePicker
-                                            selected={arrivalDate}
-                                            onChange={date => setArrivalDate(date)}
+                                            selected={departureDate}
+                                            onChange={date => setDepartureDate(date)}
                                             className='w-2/3'
                                         />
                                     </div>
