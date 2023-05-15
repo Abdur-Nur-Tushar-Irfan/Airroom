@@ -17,8 +17,8 @@ const Booking = () => {
                         <th>Check Out</th>
                         <th>Duration</th>
                         <th>Total Cost</th>
-                        <th></th>
-                        <th></th>
+                        <th>Delete</th>
+                        <th>Update</th>
                     </tr>
                 </thead>
                 <tbody>
