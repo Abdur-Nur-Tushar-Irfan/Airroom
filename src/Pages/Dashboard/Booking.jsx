@@ -13,10 +13,13 @@ const Booking = () => {
                         <th>Address</th>
                         <th>Room No</th>
                         <th>Guest</th>
+                        <th>Room-Type</th>
+                        <th>Guest-House</th>
                         <th>Check In</th>
                         <th>Check Out</th>
                         <th>Duration</th>
                         <th>Total Cost</th>
+                        <th>Description</th>
                         <th>Delete</th>
                         <th>Update</th>
                     </tr>
@@ -30,10 +33,13 @@ const Booking = () => {
                         <td>KSI</td>
                         <td>306</td>
                         <td>1</td>
+                        <td>Dulex</td>
+                        <td>Guest House-1</td>
                         <td>6/5/2023</td>
                         <td>8/5/2023</td>
                         <td>3</td>
                         <td>7500</td>
+                        <td>He is with his wife and 2 sons</td>
                         <td><button className="badge badge-secondary">Delete</button></td>
                         <td><button className="badge badge-accent">Update</button></td>
                     </tr>
