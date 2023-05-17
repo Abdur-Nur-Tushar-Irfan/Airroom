@@ -58,7 +58,7 @@ const Room = () => {
   }
   return (
     <>
-      <h1 className='text-3xl font-bold text-gray-800 py-8'>
+      <h1 className='text-3xl font-bold text-gray-800'>
         Add New Booking
       </h1>
       <AddServiceForm
